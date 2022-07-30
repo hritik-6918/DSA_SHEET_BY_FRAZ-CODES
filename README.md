@@ -1,5 +1,5 @@
 # DSA_SHEET_BY_FRAZ-CODES
-Hey there folks ,keep coding🎃!  Welcome to new repository for DSA sheet problems by @hritik-6918 ![1_eYgSPyBJK49CmvM8Czrdog](https://user-images.githubusercontent.com/83581212/181916003-b8369fa3-3792-4211-8b3d-6876eb52fa9b.jpeg)
+Hey there folks, keep coding🎃!  Welcome to new repository for DSA sheet problems by @hritik-6918 ![1_eYgSPyBJK49CmvM8Czrdog](https://user-images.githubusercontent.com/83581212/181916003-b8369fa3-3792-4211-8b3d-6876eb52fa9b.jpeg)
 
 
 🔥 This is an attempt to solve DSA Cracker Coding Questions List curated by @Fraz bhaiya.
@@ -12,4 +12,4 @@ Hey there folks ,keep coding🎃!  Welcome to new repository for DSA sheet probl
 
 #algorithms   #cpp    #solutions   #leetcode   #codestudio   #data-structures   #coding   #coding-questions   #Dsa     #Fraz-Dsa-sheet
 
-                                                        Thank You 🎃
+Thank You 🎃
