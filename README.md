@@ -1,5 +1,6 @@
 # DSA_SHEET_BY_FRAZ-CODES
-Hey there folks ,keep codiing🎃!  Welcome to my repository for DSA sheet problems by @Fraz
+Hey there folks ,keep coding🎃!  Welcome to my repository for DSA sheet problems by @Fraz
+
 🔥 This is an attempt to solve DSA Cracker Coding Questions List curated by @Fraz bhaiya.
 
 🍁 What is this repository about ??
