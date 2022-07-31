@@ -1,0 +1,15 @@
+int occursOnce(vector<int> &a, int n){
+	// Write your code here.
+ /* We can make use of xor operator here...bcz it returns zero  
+
+   when values are same.. so all values will be cancelled with each
+
+   other except the one who has only appeared once.
+ */
+    int res = 0;
+    for( int i = 0;i<n; i++){
+        res = res^a[i];  // using xor operation
+     
+    }
+	return res;
+}
