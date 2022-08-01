@@ -1,0 +1,54 @@
+// Approach -(Solution using extra space/vector)
+/* The idea is to use an extra vector to store all the non-zero elements while maintaining their relative order. 
+So we will first add all the non-zero elements to a vector and 
+then iterate that vector backwards and 
+start updating the array values from end. 
+In the end we will set all the array values whose values were not updated to 0. */
+
+code:-
+// 1st approach
+#include<vector>
+
+void moveZerosToLeft(int *arr, int n) 
+{
+    // Defining vector to store non-zero elements
+    vector <int> storeNonZero;
+    
+    // Iterating the array and adding all non-zero values to vector
+    for (int i = 0; i < n; i++) 
+    {
+        if (arr[i] != 0) 
+        {
+            storeNonZero.push_back(arr[i]);
+        }
+    }
+
+    // Iterating the vector from backwards and updating array values
+    int i = n - 1;
+    
+    for (int j = storeNonZero.size() - 1; j >= 0; j--) 
+    {
+        arr[i] = storeNonZero[j];
+        i--;
+    }
+    
+    // Setting all the remaining array values to 0
+    while (i >= 0) 
+    {
+        arr[i] = 0;
+        i--;
+    }
+}
+// 2nd approach
+void moveZerosToLeft(int *arr, int n) 
+{
+     int i = n-1;
+    
+     for(int j=n-1; j>=0; j--){
+         if(arr[j]!=0){
+             swap(arr[j], arr[i]);
+             i--;
+         }
+     }
+
+}
