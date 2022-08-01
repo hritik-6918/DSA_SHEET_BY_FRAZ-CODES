@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+int maximumPoints(int n, vector<vector<int>> &grid)
+{
+    // Optimal solution approach
+    int sum = 0;
+    for( int i = 0; i<n; i++){
+        sum += grid[i][i]; // primary diagonal
+        sum += grid[i][n-i-1];  // secondary diagonal
+        
+    }
+    if(n%2==1) // if 'N' is odd,then subtract middle element
+        sum -= grid[n/2][n/2];
+    return sum;
+}
+// Brute force approach
+/* int maximum = 0;
+for( int i = 0; i<n; i++){
+     for(int j = 0; j<n; j++){
+      if(i==j || i+j == n-1)
+      maximum = grid[i][j];
+     }
+}
+    return maximum;
+}
+*/
