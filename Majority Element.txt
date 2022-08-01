@@ -1,0 +1,33 @@
+#include <bits/stdc++.h> 
+int findMajorityElement(int arr[], int n) {
+	//Moore's Majority Vote algorithm
+/* a majority element is an element that occurs more than floor(N/2) times in the array. */
+     int element = 0;
+     int count = 0;
+    for(int i = 0; i<n; i++){
+            if(count ==0){
+                element = arr[i];
+                
+            }
+        if(element ==arr[i]){
+            count++;
+        }
+        else{
+            count--;
+        }
+    }
+    count =0;
+    for( int i= 0; i<n; i++){
+        if(element ==arr[i]){
+            count++;
+        }
+    }
+    
+    if(count>floor(n/2)){
+        return element;
+    }
+    return -1;
+            
+    }
+
+ 
