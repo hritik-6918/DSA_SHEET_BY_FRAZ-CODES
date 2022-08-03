@@ -1,0 +1,46 @@
+vector<vector<int>> getFinalGrid(vector<vector<int>> &a, int n) {
+    // Write your code here.
+    for( int i = 0; i<n;i++){
+        int j = 0, k = n-1;
+        while(j<k){
+            swap(a[i][j],a[i][k]);
+            j++;
+            k--;
+            
+        }
+    }
+    for(int i = 0; i<n; i++){
+        for(int j = 0; j<n; j++){
+            if(a[i][j]==0)
+                a[i][j] = 1;
+            else
+                a[i][j] =0;
+            
+        }
+    }
+    return a;
+}
+/* optimal soln.
+// Loop through all the rows.
+    for(int i = 0; i < n; ++i) {
+        // Loop through the first half.
+        for(int j = 0; 2 * j < n; ++j) {
+            // Corresponding index in second half.
+            int x = n - j - 1;
+            // Swap first half with second half.
+            swap(a[i][j], a[i][x]);
+
+            // Change colour.
+            a[i][j] = 1 - a[i][j];
+
+            // Check for preventing colour change 2 times.
+            if(j != x)
+                // Change colour.
+                a[i][x] = 1 - a[i][x];
+        }
+    }
+
+    // Return the final grid.
+    return a;
+}
+*/
