@@ -1,0 +1,19 @@
+vector<vector<int>> arrange(int n, int m, vector<vector<int>>& b, int r, int c)
+{
+    // If number of cells are not equal.
+    if((n * m) != (r * c))
+    {
+        return b;
+    }
+
+    vector<vector<int>> ans(r, vector<int>(c));
+
+    // Find positions of all N*M elements in both matrices, and assign.
+    for (int i = 0; i < n * m; i++)
+    {
+        ans[i / c][i % c] = b[i / m][i % m];
+    }
+    
+    // Return the final result.
+    return ans;
+}
