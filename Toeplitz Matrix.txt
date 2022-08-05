@@ -1,0 +1,14 @@
+bool toeplitzMatrix(int n, int m, vector<vector<int>> &mat)
+{
+    // Write your code here.
+    /* A matrix is said to be Toeplitz if every diagonal from top-left to bottom-right has the same elements.*/
+    for(int i = 0; i<n-1;i++){
+        for(int j = 0; j<m-1; j++){
+            if (mat[i][j] != mat[i+1][j+1])
+                return false;
+            
+        }
+    }
+    
+        return true;
+}
