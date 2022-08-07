@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+int treasureAndJewels(int n, int m, string stones, string jewels)
+{
+    // Write your code here.
+    unordered_map<char, int> mp;
+    int count=0;
+    for(int i=0; i<m; i++)
+        mp[jewels[i]]++;
+    for(int i=0; i<n; i++)
+        if(mp[stones[i]]>0) 
+         count++;
+    return count;
+}
