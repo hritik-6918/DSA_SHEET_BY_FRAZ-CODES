@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+string sentenceSorting(string &str){
+    // Write your code here.
+    string str1 = str; 
+    string str2 = str; 
+    stringstream ss(str1); 
+    int count = 0; 
+    string ans; 
+    while(ss>>str1) {  
+        count++;
+    }    
+    string s[count]; 
+    stringstream ss1(str2); 
+    while(ss1>>str2) {     
+        int index = str2[str2.length()-1]-'0'-1;     
+        str2.erase(str2.begin() + str2.length()-1);     
+        s[index] = str2; 
+    } 
+    for(int i=0;i<count;++i) 
+    {    
+        ans += s[i]+" "; 
+    } 
+    ans.erase(ans.begin()+ans.length()-1); 
+    return ans; 
+}
+    
