@@ -1,0 +1,28 @@
+string reverseString(string str)
+{
+	// Write your code here.
+    string s ="";
+    int n=str.length();
+    for(int i=n-1; i>=0; i--)
+        s+=str[i];
+    return s;
+}
+/* int first = 0;
+   int last = str.size()-1;
+    
+    while(first<last){
+    swap(str[first],str[last]);
+    first++;
+    last--;
+    }
+    return str;
+*/
+// optimal solution
+/* int n = str.size();
+    for (int i = 0; i < n / 2; ++i)
+    {
+        swap(str[i], str[n - i - 1]);
+    }
+    
+    return str;
+*/
