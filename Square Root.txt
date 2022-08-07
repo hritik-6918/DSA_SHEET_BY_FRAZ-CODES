@@ -1,0 +1,7 @@
+#include<bits/stdc++.h>
+int sqrtN(long long int N)
+{
+    // Write your code here.
+    long long int ans = sqrt(N);
+    return ans;
+}
