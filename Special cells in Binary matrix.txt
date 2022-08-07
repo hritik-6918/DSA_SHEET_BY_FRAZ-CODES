@@ -1,0 +1,32 @@
+int specialCellInBinaryMatrix(int n, int m, vector<vector<int>> &mat)
+{
+    // Write your code here.
+    int ans = 0;
+
+    for (int i = 0; i < n; i++){
+
+        for (int j = 0; j < m; j++){
+
+            if (mat[i][j] == 1){
+
+                int rowsum = 0;
+                int colsum = 0;
+
+                for (int k = 0; k < n; k++){                
+                     rowsum = rowsum + mat[k][j];
+                }
+
+                for (int k = 0; k < m; k++){ 
+
+                    colsum = colsum + mat[i][k];
+                }
+
+                if (rowsum == 1 && colsum == 1){
+                    ans = ans + 1;
+                }
+            }
+        }
+    }
+
+    return ans;
+}
