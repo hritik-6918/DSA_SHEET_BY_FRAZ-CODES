@@ -1,0 +1,26 @@
+bool splitString(string &str){
+    // Write your code here.
+    int s = 0, e = str.length()-1;
+    int v = 0;
+    while(s<e){
+        if(str[s]=='a' || str[s]=='A'
+           || str[s]=='e' || str[s]=='E'
+           || str[s]=='i' || str[s]=='I'
+           || str[s]=='o' || str[s]=='O'
+           || str[s]=='u' || str[s]=='U'){
+            v++;
+        }
+        
+        if (str[e]=='a' || str[e]=='A'
+           || str[e]=='e' || str[e]=='E'
+           || str[e]=='i' || str[e]=='I'
+           || str[e]=='o' || str[e]=='O'
+           || str[e]=='u' || str[e]=='U'){
+            v--;
+        }
+           
+        s++;
+        e--;
+    }
+    return v==0;
+}
