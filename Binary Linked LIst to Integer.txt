@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+int binaryToInteger(int n, Node *head) {
+    //    Write your code here
+    Node *temp = head;
+    int ans = 0;
+    while( temp !=NULL){
+        ans *= 2;
+        ans += (temp ->data);
+        temp = temp->next;
+    }
+    return ans;
+}
+/*  int num = 0;
+    while (head != NULL) {
+        num *= 2;
+        num += head->data;
+
+        // Move to the next node.
+        head = head->next;
+    }
+
+    return num;
+*/
