@@ -1,0 +1,19 @@
+bool isPowerOfTwo(int n)
+{
+    // Write your code here
+    if(n<0)
+        return false;
+    while(n>1){
+        if(n%2==1)
+            return false;
+        n = n/2;
+        
+    }
+    return true;
+}
+/* if(n==1)
+return true;
+else if (n%2==0)
+return isPowerOfTwo(n/2);
+return false;
+}
